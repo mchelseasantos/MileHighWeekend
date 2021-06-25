@@ -1,0 +1,54 @@
+h1 {
+    background-color: #a6d5ed;
+    color: #ffffff;
+}
+
+h3 {
+    background-color: #a6d5ed;
+    color: white;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 #a6d5ed;
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 50px 50px 0 #a6d5ed;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 30px 16px;
+  }
+
+  .image-container {
+    background-image: url(https://www.colorado.com/sites/default/files/Needle-Mtn-View---300-dpi.jpg style="width:100%"); /* The image used - important! */
+    background-size: cover;
+    position:center; /* Needed to position the cutout text in the middle of the image */
+    height: 100px; /* Some height */
+  }
+  
+  .text {
+    background-color: white;
+    color: black;
+    font-size: 5vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 5px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+
